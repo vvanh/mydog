@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Depot</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class='<%= controller.controller_name %>'>
+<<<<<<< HEAD
+<div id="banner">
+	<%= image_tag("logo.png")%>
+	<%= @page_title || "pragmatic Booksheft"%>
+</div>
+<div id="columns">
+	<div id="site">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">question</a></li>
+			<li><a href="#">news</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+	<div id="main" style="padding-left:20px;">
+		<%= yield %>
+	</div>
+</div>
+=======
+<%= yield %>
+>>>>>>> 698176da6da3500e420911eadb7b812e4275ed5c
+
+</body>
+</html>
