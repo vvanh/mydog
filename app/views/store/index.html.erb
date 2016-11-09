@@ -6,17 +6,10 @@
 		<div class="entry">
 			<%= image_tag(product.image_url) %>
 			<h3><%= product.title %></h3>
-<<<<<<< HEAD
 			<p><%= sanitize(product.description) %></p>
 			<div class="price_line">
 			   <span class="price"><%= product.price %></span>
 			   <%= button_to 'Add to cart',line_items_path(product_id: product)%>
-=======
-			<%= sanitize(product.description) %>
-			<div class="price_line">
-			   <span class="price"><%= product.price %></span>
->>>>>>> 698176da6da3500e420911eadb7b812e4275ed5c
-			</div>
 		</div>
 
 <% end %>

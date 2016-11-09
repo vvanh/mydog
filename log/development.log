@@ -9727,3 +9727,904 @@ Processing by CartsController#show as HTML
   [1m[35mProduct Load (0.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1
   Rendered carts/show.html.erb within layouts/application (1.8ms)
 Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 18:48:31 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StoreController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/vananh/mydog/app/models/product.rb:2: syntax error, unexpected <<
+<<<<<<< HEAD
+  ^):
+  app/models/product.rb:2: syntax error, unexpected <<
+  app/controllers/store_controller.rb:3:in `index'
+
+
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.7ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.5ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 18:48:46 +0700
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC
+  Rendered store/index.html.erb within layouts/application (1107.1ms)
+Completed 500 Internal Server Error in 1114ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (CssSyntaxError: /home/vananh/mydog/app/assets/stylesheets/application.css:78:1: Unknown word
+
+  76 | 
+  77 |  
+> 78 | =======
+     | ^
+  79 |  */
+  80 | >>>>>>> 698176da6da3500e420911eadb7b812e4275ed5c
+):
+    4: 	<h1>Your Pragmatic Catalog</h1>
+    5: 	<% @products.each do |product| %>
+    6: 		<div class="entry">
+    7: 			<%= image_tag(product.image_url) %>
+    8: 			<h3><%= product.title %></h3>
+    9: <<<<<<< HEAD
+   10: 			<p><%= sanitize(product.description) %></p>
+  apply.from (eval at <anonymous> ((execjs):33510:8), <anonymous>:1:39)
+  app/views/store/index.html.erb:7:in `block in _app_views_store_index_html_erb__1583654214576325909_47093165492300'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__1583654214576325909_47093165492300'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 18:49:01 +0700
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC[0m
+  Rendered store/index.html.erb within layouts/application (501.8ms)
+Completed 500 Internal Server Error in 503ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (CssSyntaxError: /home/vananh/mydog/app/assets/stylesheets/application.css:78:1: Unknown word
+
+  76 | 
+  77 |  
+> 78 | =======
+     | ^
+  79 |  */
+  80 | >>>>>>> 698176da6da3500e420911eadb7b812e4275ed5c
+):
+    4: 	<h1>Your Pragmatic Catalog</h1>
+    5: 	<% @products.each do |product| %>
+    6: 		<div class="entry">
+    7: 			<%= image_tag(product.image_url) %>
+    8: 			<h3><%= product.title %></h3>
+    9: <<<<<<< HEAD
+   10: 			<p><%= sanitize(product.description) %></p>
+  apply.from (eval at <anonymous> ((execjs):33510:8), <anonymous>:1:39)
+  app/views/store/index.html.erb:7:in `block in _app_views_store_index_html_erb__1583654214576325909_47093165492300'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__1583654214576325909_47093165492300'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 18:52:00 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC
+  Rendered store/index.html.erb within layouts/application (1176.2ms)
+Completed 500 Internal Server Error in 1188ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (Invalid CSS after "...b7b812e4275ed5c": expected "{", was "}"):
+    4: 	<h1>Your Pragmatic Catalog</h1>
+    5: 	<% @products.each do |product| %>
+    6: 		<div class="entry">
+    7: 			<%= image_tag(product.image_url) %>
+    8: 			<h3><%= product.title %></h3>
+    9: <<<<<<< HEAD
+   10: 			<p><%= sanitize(product.description) %></p>
+  app/assets/stylesheets/store.scss:42
+  app/views/store/index.html.erb:7:in `block in _app_views_store_index_html_erb__3295019254297638609_47159855685420'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3295019254297638609_47159855685420'
+
+
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.7ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.7ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 18:52:41 +0700
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC[0m
+  Rendered store/index.html.erb within layouts/application (23.3ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (Invalid CSS after "...b7b812e4275ed5c": expected "{", was "}"):
+    4: 	<h1>Your Pragmatic Catalog</h1>
+    5: 	<% @products.each do |product| %>
+    6: 		<div class="entry">
+    7: 			<%= image_tag(product.image_url) %>
+    8: 			<h3><%= product.title %></h3>
+    9: 			<p><%= sanitize(product.description) %></p>
+   10: 			<div class="price_line">
+  app/assets/stylesheets/store.scss:42
+  app/views/store/index.html.erb:7:in `block in _app_views_store_index_html_erb__3295019254297638609_69987347416900'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3295019254297638609_69987347416900'
+
+
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.4ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.7ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 18:52:57 +0700
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC
+  Rendered store/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (Invalid CSS after "...b7b812e4275ed5c": expected "{", was "}"):
+    4: 	<h1>Your Pragmatic Catalog</h1>
+    5: 	<% @products.each do |product| %>
+    6: 		<div class="entry">
+    7: 			<%= image_tag(product.image_url) %>
+    8: 			<h3><%= product.title %></h3>
+    9: 			<p><%= sanitize(product.description) %></p>
+   10: 			<div class="price_line">
+  app/assets/stylesheets/store.scss:42
+  app/views/store/index.html.erb:7:in `block in _app_views_store_index_html_erb__3295019254297638609_47159855488720'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3295019254297638609_47159855488720'
+
+
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.9ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.9ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 18:53:16 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC
+  Rendered store/index.html.erb within layouts/application (182.3ms)
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (Invalid CSS after "...b7b812e4275ed5c": expected "{", was "}"):
+    4: 	<h1>Your Pragmatic Catalog</h1>
+    5: 	<% @products.each do |product| %>
+    6: 		<div class="entry">
+    7: 			<%= image_tag(product.image_url) %>
+    8: 			<h3><%= product.title %></h3>
+    9: 			<p><%= sanitize(product.description) %></p>
+   10: 			<div class="price_line">
+  app/assets/stylesheets/store.scss:42
+  app/views/store/index.html.erb:7:in `block in _app_views_store_index_html_erb__3233345685333753430_47255067888840'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3233345685333753430_47255067888840'
+
+
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.4ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.9ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 18:53:21 +0700
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC[0m
+  Rendered store/index.html.erb within layouts/application (21.5ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (Invalid CSS after "...b7b812e4275ed5c": expected "{", was "}"):
+    4: 	<h1>Your Pragmatic Catalog</h1>
+    5: 	<% @products.each do |product| %>
+    6: 		<div class="entry">
+    7: 			<%= image_tag(product.image_url) %>
+    8: 			<h3><%= product.title %></h3>
+    9: 			<p><%= sanitize(product.description) %></p>
+   10: 			<div class="price_line">
+  app/assets/stylesheets/store.scss:42
+  app/views/store/index.html.erb:7:in `block in _app_views_store_index_html_erb__3233345685333753430_47255067888840'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3233345685333753430_47255067888840'
+
+
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.4ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.7ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 18:54:03 +0700
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC
+  Rendered store/index.html.erb within layouts/application (18.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (Invalid CSS after "...b7b812e4275ed5c": expected "{", was "}"):
+    4: 	<h1>Your Pragmatic Catalog</h1>
+    5: 	<% @products.each do |product| %>
+    6: 		<div class="entry">
+    7: 			<%= image_tag(product.image_url) %>
+    8: 			<h3><%= product.title %></h3>
+    9: 			<p><%= sanitize(product.description) %></p>
+   10: 			<div class="price_line">
+  app/assets/stylesheets/store.scss:42
+  app/views/store/index.html.erb:7:in `block in _app_views_store_index_html_erb__3233345685333753430_70122805078760'
+  app/views/store/index.html.erb:5:in `_app_views_store_index_html_erb__3233345685333753430_70122805078760'
+
+
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.1ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.6ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/vananh/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 18:54:57 +0700
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC[0m
+  Rendered store/index.html.erb within layouts/application (1455.0ms)
+Completed 200 OK in 1489ms (Views: 1488.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/line_items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/products.self-1badbad21f6e7814dcddc346213a6300a2b9fc13220b75abff4207e10f60443e.css?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/store.self-8cb250adb7d2f46bed3b7f8092c8f83d4d0b4781d39e2cd5e969fde717b5b52a.css?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/scaffolds.self-d4055af33422b822a0ec30d32333def262c57883886b68f26fbdf7a3c0b22e45.css?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/application.self-9de69e09f6c4836b8440ef430c4598a1dfef779322bddf560e9af49e6ce281ed.css?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/line_items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/store.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/logo-d9fb1fcba5c22d3309d2ba7ec06d5fc4b7041a5a2359947783e8dbf615b9378f.png" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/a2-1f7b2710e7a26b33183c2b38092135d78bfe0479dedea55261842f34f60efcc7.png" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/a3-14bc283c2163e9741c99d650d7a4c6f5d8206424ac71c527d7dbf1a04cec96be.jpg" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/assets/a1-842b2851884dd15c7113e4845c2c89403664978b5430a4ee944aa6b41bdae508.png" for 127.0.0.1 at 2016-11-09 18:54:59 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 18:55:37 +0700
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC
+  Rendered store/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 537ms (Views: 535.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e0102142a7435556edfbd23527fac3f562162cd5dee3a3344e48b7de1a02bacf.css?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/store.self-8cb250adb7d2f46bed3b7f8092c8f83d4d0b4781d39e2cd5e969fde717b5b52a.css?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/scaffolds.self-d4055af33422b822a0ec30d32333def262c57883886b68f26fbdf7a3c0b22e45.css?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/products.self-1badbad21f6e7814dcddc346213a6300a2b9fc13220b75abff4207e10f60443e.css?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/line_items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/line_items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/store.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/logo-d9fb1fcba5c22d3309d2ba7ec06d5fc4b7041a5a2359947783e8dbf615b9378f.png" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/a3-14bc283c2163e9741c99d650d7a4c6f5d8206424ac71c527d7dbf1a04cec96be.jpg" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/a1-842b2851884dd15c7113e4845c2c89403664978b5430a4ee944aa6b41bdae508.png" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/assets/a2-1f7b2710e7a26b33183c2b38092135d78bfe0479dedea55261842f34f60efcc7.png" for 127.0.0.1 at 2016-11-09 18:55:38 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC[0m
+  Rendered store/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/line_items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/application.self-e0102142a7435556edfbd23527fac3f562162cd5dee3a3344e48b7de1a02bacf.css?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/scaffolds.self-d4055af33422b822a0ec30d32333def262c57883886b68f26fbdf7a3c0b22e45.css?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/products.self-1badbad21f6e7814dcddc346213a6300a2b9fc13220b75abff4207e10f60443e.css?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/store.self-8cb250adb7d2f46bed3b7f8092c8f83d4d0b4781d39e2cd5e969fde717b5b52a.css?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/line_items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/store.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/a2-1f7b2710e7a26b33183c2b38092135d78bfe0479dedea55261842f34f60efcc7.png" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/a1-842b2851884dd15c7113e4845c2c89403664978b5430a4ee944aa6b41bdae508.png" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/a3-14bc283c2163e9741c99d650d7a4c6f5d8206424ac71c527d7dbf1a04cec96be.jpg" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started GET "/assets/logo-d9fb1fcba5c22d3309d2ba7ec06d5fc4b7041a5a2359947783e8dbf615b9378f.png" for 127.0.0.1 at 2016-11-09 18:57:48 +0700
+
+
+Started POST "/line_items?product_id=4" for 127.0.0.1 at 2016-11-09 18:58:52 +0700
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"2sZUJ7yKyYOKmyVRrt7vBM16g+31hlIhO+lZm1hzOXFb4l9e9u9WceRw+Uqw1Vv+qNnrBewF5Ef2WR8WYSGi8w==", "product_id"=>"4"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `carts` (`created_at`, `updated_at`) VALUES ('2016-11-09 11:58:52', '2016-11-09 11:58:52')
+  [1m[36m (33.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT  `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14 AND `line_items`.`product_id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `line_items` (`product_id`, `cart_id`, `created_at`, `updated_at`) VALUES (4, 14, '2016-11-09 11:58:52', '2016-11-09 11:58:52')[0m
+  [1m[35m (34.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/carts/14
+Completed 302 Found in 96ms (ActiveRecord: 70.0ms)
+
+
+Started GET "/carts/14" for 127.0.0.1 at 2016-11-09 18:58:52 +0700
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1[0m
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+  Rendered carts/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC
+  Rendered store/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/products.self-1badbad21f6e7814dcddc346213a6300a2b9fc13220b75abff4207e10f60443e.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/application.self-e0102142a7435556edfbd23527fac3f562162cd5dee3a3344e48b7de1a02bacf.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/scaffolds.self-d4055af33422b822a0ec30d32333def262c57883886b68f26fbdf7a3c0b22e45.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/line_items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/line_items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/store.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/store.self-8cb250adb7d2f46bed3b7f8092c8f83d4d0b4781d39e2cd5e969fde717b5b52a.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/logo-d9fb1fcba5c22d3309d2ba7ec06d5fc4b7041a5a2359947783e8dbf615b9378f.png" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/a2-1f7b2710e7a26b33183c2b38092135d78bfe0479dedea55261842f34f60efcc7.png" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/a1-842b2851884dd15c7113e4845c2c89403664978b5430a4ee944aa6b41bdae508.png" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/assets/a3-14bc283c2163e9741c99d650d7a4c6f5d8206424ac71c527d7dbf1a04cec96be.jpg" for 127.0.0.1 at 2016-11-09 19:00:16 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC[0m
+  Rendered store/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/products.self-1badbad21f6e7814dcddc346213a6300a2b9fc13220b75abff4207e10f60443e.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/store.self-8cb250adb7d2f46bed3b7f8092c8f83d4d0b4781d39e2cd5e969fde717b5b52a.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/application.self-e0102142a7435556edfbd23527fac3f562162cd5dee3a3344e48b7de1a02bacf.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/line_items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/scaffolds.self-d4055af33422b822a0ec30d32333def262c57883886b68f26fbdf7a3c0b22e45.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/line_items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/logo-d9fb1fcba5c22d3309d2ba7ec06d5fc4b7041a5a2359947783e8dbf615b9378f.png" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/a2-1f7b2710e7a26b33183c2b38092135d78bfe0479dedea55261842f34f60efcc7.png" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/store.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/a3-14bc283c2163e9741c99d650d7a4c6f5d8206424ac71c527d7dbf1a04cec96be.jpg" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/a1-842b2851884dd15c7113e4845c2c89403664978b5430a4ee944aa6b41bdae508.png" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:30 +0700
+
+
+Started POST "/line_items?product_id=4" for 127.0.0.1 at 2016-11-09 19:00:33 +0700
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"VaQvbTK8qNEWTnROJR4QeQU0YSntf6XjmUDthiwigiLUgCQUeNk3I3ilqFU7FaSDYJcJwfT8E4VU8KsLFXAZoA==", "product_id"=>"4"}
+  [1m[35mCart Load (0.4ms)[0m  SELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+  [1m[35mLineItem Load (0.5ms)[0m  SELECT  `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14 AND `line_items`.`product_id` = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `line_items` SET `quantity` = 2, `updated_at` = '2016-11-09 12:00:33' WHERE `line_items`.`id` = 30
+  [1m[36m (89.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/carts/14
+Completed 302 Found in 101ms (ActiveRecord: 91.0ms)
+
+
+Started GET "/carts/14" for 127.0.0.1 at 2016-11-09 19:00:33 +0700
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mCart Load (1.8ms)[0m  SELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+  Rendered carts/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/carts/14" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mCart Load (1.5ms)[0m  [1mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1[0m
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14
+  [1m[36mProduct Load (1.6ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+  Rendered carts/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 32ms (Views: 25.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/line_items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/products.self-1badbad21f6e7814dcddc346213a6300a2b9fc13220b75abff4207e10f60443e.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/store.self-8cb250adb7d2f46bed3b7f8092c8f83d4d0b4781d39e2cd5e969fde717b5b52a.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/scaffolds.self-d4055af33422b822a0ec30d32333def262c57883886b68f26fbdf7a3c0b22e45.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/application.self-e0102142a7435556edfbd23527fac3f562162cd5dee3a3344e48b7de1a02bacf.css?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/line_items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/store.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started GET "/assets/logo-d9fb1fcba5c22d3309d2ba7ec06d5fc4b7041a5a2359947783e8dbf615b9378f.png" for 127.0.0.1 at 2016-11-09 19:00:48 +0700
+
+
+Started POST "/line_items?product_id=3" for 127.0.0.1 at 2016-11-09 19:00:56 +0700
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"VaQvbTK8qNEWTnROJR4QeQU0YSntf6XjmUDthiwigiLUgCQUeNk3I3ilqFU7FaSDYJcJwfT8E4VU8KsLFXAZoA==", "product_id"=>"3"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  [1m[35mLineItem Load (0.5ms)[0m  SELECT  `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14 AND `line_items`.`product_id` = 3 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `line_items` (`product_id`, `cart_id`, `created_at`, `updated_at`) VALUES (3, 14, '2016-11-09 12:00:56', '2016-11-09 12:00:56')
+  [1m[36m (32.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/carts/14
+Completed 302 Found in 41ms (ActiveRecord: 33.5ms)
+
+
+Started GET "/carts/14" for 127.0.0.1 at 2016-11-09 19:00:56 +0700
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  Rendered carts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/line_items?product_id=5" for 127.0.0.1 at 2016-11-09 19:00:59 +0700
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"VaQvbTK8qNEWTnROJR4QeQU0YSntf6XjmUDthiwigiLUgCQUeNk3I3ilqFU7FaSDYJcJwfT8E4VU8KsLFXAZoA==", "product_id"=>"5"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m
+  [1m[35mLineItem Load (0.3ms)[0m  SELECT  `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14 AND `line_items`.`product_id` = 5 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `line_items` (`product_id`, `cart_id`, `created_at`, `updated_at`) VALUES (5, 14, '2016-11-09 12:00:59', '2016-11-09 12:00:59')
+  [1m[36m (28.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/carts/14
+Completed 302 Found in 35ms (ActiveRecord: 29.0ms)
+
+
+Started GET "/carts/14" for 127.0.0.1 at 2016-11-09 19:00:59 +0700
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1
+  Rendered carts/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC
+  Rendered store/index.html.erb within layouts/application (184.2ms)
+Completed 200 OK in 214ms (Views: 205.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/line_items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/products.self-1badbad21f6e7814dcddc346213a6300a2b9fc13220b75abff4207e10f60443e.css?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/scaffolds.self-d4055af33422b822a0ec30d32333def262c57883886b68f26fbdf7a3c0b22e45.css?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/store.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/application.self-e0102142a7435556edfbd23527fac3f562162cd5dee3a3344e48b7de1a02bacf.css?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/store.self-8cb250adb7d2f46bed3b7f8092c8f83d4d0b4781d39e2cd5e969fde717b5b52a.css?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/line_items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/a1-842b2851884dd15c7113e4845c2c89403664978b5430a4ee944aa6b41bdae508.png" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/a2-1f7b2710e7a26b33183c2b38092135d78bfe0479dedea55261842f34f60efcc7.png" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/a3-14bc283c2163e9741c99d650d7a4c6f5d8206424ac71c527d7dbf1a04cec96be.jpg" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started GET "/assets/logo-d9fb1fcba5c22d3309d2ba7ec06d5fc4b7041a5a2359947783e8dbf615b9378f.png" for 127.0.0.1 at 2016-11-09 19:01:15 +0700
+
+
+Started POST "/line_items?product_id=4" for 127.0.0.1 at 2016-11-09 19:01:17 +0700
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"TntMs4dDpb0lba53iTSxwTdW0qKGyNUXQv3rglU2op/PX0fKzSY6T0uGcmyXPwU7UvW6Sp9LY3GPTa0PbGQ5HQ==", "product_id"=>"4"}
+  [1m[36mCart Load (0.3ms)[0m  [1mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+  [1m[36mLineItem Load (1.9ms)[0m  [1mSELECT  `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14 AND `line_items`.`product_id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `line_items` SET `quantity` = 3, `updated_at` = '2016-11-09 12:01:17' WHERE `line_items`.`id` = 30[0m
+  [1m[35m (33.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/carts/14
+Completed 302 Found in 103ms (ActiveRecord: 38.1ms)
+
+
+Started GET "/carts/14" for 127.0.0.1 at 2016-11-09 19:01:17 +0700
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1[0m
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m
+  Rendered carts/show.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/line_items?product_id=5" for 127.0.0.1 at 2016-11-09 19:01:20 +0700
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"TntMs4dDpb0lba53iTSxwTdW0qKGyNUXQv3rglU2op/PX0fKzSY6T0uGcmyXPwU7UvW6Sp9LY3GPTa0PbGQ5HQ==", "product_id"=>"5"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT  `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14 AND `line_items`.`product_id` = 5 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `line_items` SET `quantity` = 2, `updated_at` = '2016-11-09 12:01:20' WHERE `line_items`.`id` = 32
+  [1m[36m (42.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/carts/14
+Completed 302 Found in 47ms (ActiveRecord: 43.1ms)
+
+
+Started GET "/carts/14" for 127.0.0.1 at 2016-11-09 19:01:20 +0700
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1
+  Rendered carts/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/line_items?product_id=3" for 127.0.0.1 at 2016-11-09 19:01:23 +0700
+Processing by LineItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"TntMs4dDpb0lba53iTSxwTdW0qKGyNUXQv3rglU2op/PX0fKzSY6T0uGcmyXPwU7UvW6Sp9LY3GPTa0PbGQ5HQ==", "product_id"=>"3"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT  `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14 AND `line_items`.`product_id` = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `line_items` SET `quantity` = 2, `updated_at` = '2016-11-09 12:01:23' WHERE `line_items`.`id` = 31[0m
+  [1m[35m (71.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/carts/14
+Completed 302 Found in 76ms (ActiveRecord: 71.8ms)
+
+
+Started GET "/carts/14" for 127.0.0.1 at 2016-11-09 19:01:23 +0700
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1[0m
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m
+  Rendered carts/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/carts/14" for 127.0.0.1 at 2016-11-09 19:01:27 +0700
+Processing by CartsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T+bX8AdeNlvl8+GeWPxqESUQL8qroszC5QQ3UQjiQMXOwtyJTTupqYsYPYVG997rQLNHIrIheqQotHHcMbDbRw==", "id"=>"14"}
+  [1m[35mCart Load (0.3ms)[0m  SELECT  `carts`.* FROM `carts` WHERE `carts`.`id` = 14 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLineItem Load (0.5ms)[0m  SELECT `line_items`.* FROM `line_items` WHERE `line_items`.`cart_id` = 14
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM `line_items` WHERE `line_items`.`id` = 30[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `line_items` WHERE `line_items`.`id` = 31
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `line_items` WHERE `line_items`.`id` = 32[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `carts` WHERE `carts`.`id` = 14
+  [1m[36m (37.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/store/index
+Completed 302 Found in 49ms (ActiveRecord: 40.2ms)
+
+
+Started GET "/store/index" for 127.0.0.1 at 2016-11-09 19:01:27 +0700
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`  ORDER BY `products`.`title` ASC
+  Rendered store/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.1ms)

@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   resources :line_items
   resources :carts
-=======
->>>>>>> 698176da6da3500e420911eadb7b812e4275ed5c
   get 'store/index'
 
   resources :products
